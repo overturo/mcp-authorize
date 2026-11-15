@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.0.1] - 2026-11-15
+
+### Changed
+- Published by the public repository's own release workflow with a signed provenance statement (2.0.0 was the session-published first version). No code change.
+
 ## [2.0.0] - 2026-10-26
 
 ### Added — the agent role
