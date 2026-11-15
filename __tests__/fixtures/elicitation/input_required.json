@@ -1,0 +1,14 @@
+{
+  "resultType": "input_required",
+  "inputRequests": {
+    "decision": {
+      "method": "elicitation/create",
+      "params": {
+        "mode": "url",
+        "message": "Approval needed — open Overturo to decide",
+        "url": "https://overturo.com/decisions/tok_fixture"
+      }
+    }
+  },
+  "requestState": "opaque-state-fixture"
+}

@@ -1,0 +1,107 @@
+{
+  "name": "@overturo/mcp-authorize",
+  "version": "2.0.0",
+  "description": "Authorization for MCP servers: gate a tool with an Overturo grant, verify receipts downstream",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./server": {
+      "import": {
+        "types": "./dist/server.d.ts",
+        "default": "./dist/server.js"
+      },
+      "require": {
+        "types": "./dist/server.d.cts",
+        "default": "./dist/server.cjs"
+      }
+    },
+    "./package.json": "./package.json",
+    "./legacy": {
+      "import": {
+        "types": "./dist/legacy.d.ts",
+        "default": "./dist/legacy.js"
+      },
+      "require": {
+        "types": "./dist/legacy.d.cts",
+        "default": "./dist/legacy.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@overturo/sdk": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "@modelcontextprotocol/server": "^2.4.0"
+  },
+  "peerDependenciesMeta": {
+    "@modelcontextprotocol/sdk": {
+      "optional": true
+    },
+    "@modelcontextprotocol/server": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.4.0",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@modelcontextprotocol/server": "2.4.0",
+    "@types/node": "^22.20.5",
+    "@vitest/coverage-v8": "^4.1.11",
+    "tsup": "^8.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.4.0",
+    "vitest": "^4.1.11",
+    "zod": "^4.2.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "oap",
+    "mcp",
+    "agent-authorization",
+    "middleware",
+    "overturo"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overturo/mcp-authorize.git"
+  },
+  "homepage": "https://github.com/overturo/mcp-authorize#readme",
+  "bugs": {
+    "url": "https://github.com/overturo/mcp-authorize/issues"
+  },
+  "sideEffects": false,
+  "overrides": {
+    "esbuild": "^0.28.1"
+  },
+  "resolutions": {
+    "esbuild": "^0.28.1"
+  }
+}

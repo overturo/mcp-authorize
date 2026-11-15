@@ -1,0 +1,10 @@
+{
+  "elicitations": [
+    {
+      "mode": "url",
+      "elicitationId": "esc_us_fixture0001",
+      "url": "https://overturo.com/decisions/tok_fixture",
+      "message": "Approval needed — open Overturo to decide"
+    }
+  ]
+}

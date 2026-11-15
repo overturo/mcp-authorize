@@ -1,0 +1,85 @@
+[
+  {
+    "context": {},
+    "canonical": "{}",
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  {
+    "context": {
+      "invoice_id": "inv_123",
+      "memo": "May 2026 hosting"
+    },
+    "canonical": "{\"invoice_id\":\"inv_123\",\"memo\":\"May 2026 hosting\"}",
+    "sha256": "3e32320a3bbfa89cc4d6aa54f373278e9aa32362056de65ef0da0d571d23e5c0"
+  },
+  {
+    "context": {
+      "z": 1,
+      "a": {
+        "d": [
+          1,
+          2,
+          {
+            "c": "x"
+          }
+        ],
+        "b": null
+      }
+    },
+    "canonical": "{\"a\":{\"b\":null,\"d\":[1,2,{\"c\":\"x\"}]},\"z\":1}",
+    "sha256": "2e258f271c2c80f0a8047d4f88265908aef1c5f59cf43403e197e55386d147ad"
+  },
+  {
+    "context": {
+      "amount": "47.50",
+      "currency": "USDC",
+      "flag": true,
+      "other": false
+    },
+    "canonical": "{\"amount\":\"47.50\",\"currency\":\"USDC\",\"flag\":true,\"other\":false}",
+    "sha256": "f68c0e62f0397b5f1c61692ea7d16c4b566652044ab16eb16c7b8671739cb5a5"
+  },
+  {
+    "context": {
+      "name": "Zoë — café \u2028 line",
+      "emoji": "🙂"
+    },
+    "canonical": "{\"emoji\":\"🙂\",\"name\":\"Zoë — café \u2028 line\"}",
+    "sha256": "7d9b0cfc0b94a02d5c322d44e4e3f16f64139191a4af9f2b06334a74e3376f0b"
+  },
+  {
+    "context": {
+      "nested": {
+        "deep": {
+          "deeper": {
+            "list": [
+              "b",
+              "a",
+              3,
+              2.5
+            ]
+          }
+        }
+      }
+    },
+    "canonical": "{\"nested\":{\"deep\":{\"deeper\":{\"list\":[\"b\",\"a\",3,2.5]}}}}",
+    "sha256": "b5fc6f7b5b45cc42899b81101825d15de5e427c0927df87f6f4864d26dc401a7"
+  },
+  {
+    "context": {
+      "ctl": "a\u0001b\u001fcd",
+      "named": "\b\f\n\r\t"
+    },
+    "canonical": "{\"ctl\":\"a\\u0001b\\u001fcd\",\"named\":\"\\b\\f\\n\\r\\t\"}",
+    "sha256": "e9234d3abcbbf2acb9ed0a986d11114b71f57c92e803ab1eb03d9de727554118"
+  },
+  {
+    "context": {
+      "😀": "astral",
+      "": "private use",
+      "z": 1
+    },
+    "canonical": "{\"z\":1,\"😀\":\"astral\",\"\":\"private use\"}",
+    "sha256": "ff9e1bdcc0920f3d8e7f5247ad5a6aec071c65c3009b847d1a324de7d7613ea3"
+  }
+]

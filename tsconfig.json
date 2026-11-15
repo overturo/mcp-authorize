@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "types": [
+      "node"
+    ],
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@overturo/mcp-authorize": [
+        "src/index.ts"
+      ],
+      "@overturo/mcp-authorize/server": [
+        "src/server.ts"
+      ],
+      "@overturo/mcp-authorize/legacy": [
+        "src/legacy.ts"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "examples",
+    "__tests__"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

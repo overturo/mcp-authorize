@@ -1,0 +1,21 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Approval needed: https://overturo.com/decisions/tok_fixture"
+    }
+  ],
+  "structuredContent": {
+    "held": true,
+    "decision_id": "esc_us_fixture0001",
+    "decision_url": "https://overturo.com/decisions/tok_fixture",
+    "expires_at": "2026-10-26T12:00:00Z",
+    "trigger": "approval",
+    "next": "Open the link, decide, then ask again."
+  },
+  "isError": false,
+  "_meta": {
+    "held": true,
+    "escalation_id": "esc_us_fixture0001"
+  }
+}
